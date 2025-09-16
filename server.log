@@ -1,0 +1,57 @@
+nohup: ignoring input
+[32minfo[39m: 🚀 Bakong KHQR Payment API Server Started {"environment":"development","merchant":"choeng_rayu@aclb","port":"3003","timestamp":"2025-09-04 21:31:03"}
+
+╔══════════════════════════════════════════════════════════════╗
+║                🏦 BAKONG KHQR PAYMENT API                    ║
+║              Server running successfully!                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+🌐 Server URL: http://localhost:3003
+📱 Web Interface: http://localhost:3003/web
+🔍 Health Check: http://localhost:3003/api/health
+📊 API Documentation: http://localhost:3003
+
+💳 Merchant: choeng_rayu@aclb
+📱 Phone: 855969983479
+🏛️ Environment: development
+
+🚀 Ready to process Bakong payments!
+    
+[32minfo[39m: 🌐 API Request: GET /payments/check/6b0241c773a5ec649c54c36f3a0f1060 {"ip":"::1","sessionId":"anonymous","timestamp":"2025-09-04 21:31:48","userAgent":"curl/8.5.0"}
+[32minfo[39m: User session activity {"action":"CHECK_PAYMENT_REQUEST","data":{"identifier":"6b0241c773a5ec649c54c36f3a0f1060"},"sessionId":"anonymous","timestamp":"2025-09-04 21:31:48"}
+[32minfo[39m: 🔍 Checking payment status: 6b0241c773a5ec649c54c36f3a0f1060 {"timestamp":"2025-09-04 21:31:48"}
+Bakong API response: {
+  responseCode: 1,
+  responseMessage: 'Transaction could not be found. Please check and try again.',
+  errorCode: 1,
+  data: null
+}
+[32minfo[39m: Transaction processed {"action":"PAYMENT_CHECK","data":{"md5Hash":"6b0241c773a5ec649c54c36f3a0f1060"},"error":null,"result":{"details":"No details","status":"UNPAID"},"timestamp":"2025-09-04 21:31:49"}
+[32minfo[39m: 📊 Payment status checked: 6b0241c773a5ec649c54c36f3a0f1060 - UNPAID {"timestamp":"2025-09-04 21:31:49"}
+[32minfo[39m: User session activity {"action":"CHECK_PAYMENT_SUCCESS","data":{"identifier":"6b0241c773a5ec649c54c36f3a0f1060","status":"UNPAID"},"sessionId":"anonymous","timestamp":"2025-09-04 21:31:49"}
+[32minfo[39m: ::1 - - [04/Sep/2025:14:31:49 +0000] "GET /api/payments/check/6b0241c773a5ec649c54c36f3a0f1060 HTTP/1.1" 200 251 "-" "curl/8.5.0" {"timestamp":"2025-09-04 21:31:49"}
+[32minfo[39m: 🌐 API Request: POST /payments/create {"body":{"amount":1,"billNumber":"STATUS_CHECK_001","currency":"USD","description":"Payment Status Test","storeLabel":"Status Test Store"},"ip":"::1","sessionId":"anonymous","timestamp":"2025-09-04 21:32:57","userAgent":"curl/8.5.0"}
+[32minfo[39m: User session activity {"action":"CREATE_PAYMENT_REQUEST","data":{"amount":1,"billNumber":"STATUS_CHECK_001","currency":"USD","description":"Payment Status Test","storeLabel":"Status Test Store"},"sessionId":"anonymous","timestamp":"2025-09-04 21:32:57"}
+[32minfo[39m: 🚀 Creating payment transaction: 68acecb5-0651-4457-9b34-025e2bb97b70 {"amount":1,"billNumber":"STATUS_CHECK_001","currency":"USD","isStatic":false,"storeLabel":"Status Test Store","terminalLabel":"Terminal","timestamp":"2025-09-04 21:32:57"}
+[32minfo[39m: Transaction processed {"action":"DEEPLINK_GENERATION","data":{"qrCode":"00020101021229200016choeng_rayu@aclb520459995802KH..."},"error":null,"result":{"deepLink":"https://bakong.page.link/QWQ8mfnmGnjRij928","success":true},"timestamp":"2025-09-04 21:32:58"}
+[32minfo[39m: Transaction processed {"action":"PAYMENT_GENERATION","data":{"amount":1,"billNumber":"STATUS_CHECK_001","currency":"USD"},"error":null,"result":{"imageGenerated":true,"md5Hash":"dda134fb2381d2bf04ca26fb62a0fda6","qrCode":"00020101021229200016choeng_rayu@aclb520459995802KH..."},"timestamp":"2025-09-04 21:32:58"}
+[32minfo[39m: ✅ Payment created successfully: 68acecb5-0651-4457-9b34-025e2bb97b70 (1414ms) {"timestamp":"2025-09-04 21:32:58"}
+[32minfo[39m: User session activity {"action":"CREATE_PAYMENT_SUCCESS","data":{"billNumber":"STATUS_CHECK_001","transactionId":"68acecb5-0651-4457-9b34-025e2bb97b70"},"sessionId":"anonymous","timestamp":"2025-09-04 21:32:58"}
+[32minfo[39m: ::1 - - [04/Sep/2025:14:32:58 +0000] "POST /api/payments/create HTTP/1.1" 200 674 "-" "curl/8.5.0" {"timestamp":"2025-09-04 21:32:58"}
+[32minfo[39m: 🌐 API Request: GET /payments/status/dda134fb2381d2bf04ca26fb62a0fda6 {"ip":"::1","sessionId":"anonymous","timestamp":"2025-09-04 21:34:19","userAgent":"curl/8.5.0"}
+[32minfo[39m: ::1 - - [04/Sep/2025:14:34:19 +0000] "GET /api/payments/status/dda134fb2381d2bf04ca26fb62a0fda6 HTTP/1.1" 404 296 "-" "curl/8.5.0" {"timestamp":"2025-09-04 21:34:19"}
+[32minfo[39m: 🌐 API Request: GET /payments/check/dda134fb2381d2bf04ca26fb62a0fda6 {"ip":"::1","sessionId":"anonymous","timestamp":"2025-09-04 21:35:14","userAgent":"curl/8.5.0"}
+[32minfo[39m: User session activity {"action":"CHECK_PAYMENT_REQUEST","data":{"identifier":"dda134fb2381d2bf04ca26fb62a0fda6"},"sessionId":"anonymous","timestamp":"2025-09-04 21:35:14"}
+[32minfo[39m: 🔍 Checking payment status: dda134fb2381d2bf04ca26fb62a0fda6 {"timestamp":"2025-09-04 21:35:14"}
+Bakong API response: {
+  responseCode: 1,
+  responseMessage: 'Transaction could not be found. Please check and try again.',
+  errorCode: 1,
+  data: null
+}
+[32minfo[39m: Transaction processed {"action":"PAYMENT_CHECK","data":{"md5Hash":"dda134fb2381d2bf04ca26fb62a0fda6"},"error":null,"result":{"details":"No details","status":"UNPAID"},"timestamp":"2025-09-04 21:35:16"}
+[32minfo[39m: 📊 Payment status checked: dda134fb2381d2bf04ca26fb62a0fda6 - UNPAID {"timestamp":"2025-09-04 21:35:16"}
+[32minfo[39m: User session activity {"action":"CHECK_PAYMENT_SUCCESS","data":{"identifier":"dda134fb2381d2bf04ca26fb62a0fda6","status":"UNPAID"},"sessionId":"anonymous","timestamp":"2025-09-04 21:35:16"}
+[32minfo[39m: ::1 - - [04/Sep/2025:14:35:16 +0000] "GET /api/payments/check/dda134fb2381d2bf04ca26fb62a0fda6 HTTP/1.1" 200 251 "-" "curl/8.5.0" {"timestamp":"2025-09-04 21:35:16"}
+[32minfo[39m: 🛑 SIGTERM received, shutting down gracefully {"timestamp":"2025-09-04 21:37:34"}
+[32minfo[39m: 👋 Process terminated {"timestamp":"2025-09-04 21:37:34"}

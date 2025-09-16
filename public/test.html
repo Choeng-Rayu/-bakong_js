@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Test</title>
+</head>
+<body>
+    <h1>QR Code Test</h1>
+    <div id="result"></div>
+    
+    <script>
+    async function testQR() {
+        try {
+            const response = await fetch('/api/payments/create', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    amount: 1.00,
+                    currency: 'USD',
+                    description: 'Test',
+                    storeLabel: 'Test Store',
+                    billNumber: 'TEST_' + Date.now()
+                })
+            });
+            
+            const data = await response.json();
+            console.log('API Response:', data);
+            
+            if (data.success) {
+                const imagePath = data.data.imagePath.split('/').pop();
+                document.getElementById('result').innerHTML = `
+                    <h3>Success!</h3>
+                    <p>QR Code: ${data.data.qrCode}</p>
+                    <p>Image Path: ${data.data.imagePath}</p>
+                    <p>Serving from: /temp/${imagePath}</p>
+                    <img src="/temp/${imagePath}" alt="QR Code" width="200" height="200">
+                `;
+            } else {
+                document.getElementById('result').innerHTML = `<p>Error: ${data.error}</p>`;
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('result').innerHTML = `<p>Error: ${error.message}</p>`;
+        }
+    }
+    
+    // Auto-run test when page loads
+    window.onload = testQR;
+    </script>
+</body>
+</html>

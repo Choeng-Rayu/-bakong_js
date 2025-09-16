@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakong KHQR Payment Status Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        .step-number {
+            font-weight: bold;
+            color: #3498db;
+            font-size: 18px;
+        }
+        
+        .qr-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px dashed #bdc3c7;
+            border-radius: 8px;
+        }
+        
+        .payment-info {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .status-check {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        
+        button:hover {
+            background: #2980b9;
+        }
+        
+        button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+        
+        .status-paid {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .status-unpaid {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .deep-link {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        
+        .deep-link:hover {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .debug-info {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            margin: 15px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 Bakong KHQR Payment Status Test</h1>
+        
+        <div class="warning">
+            <strong>⚠️ Important:</strong> To test payment status, you must actually scan and pay the QR code using a real Bakong wallet app!
+        </div>
+        
+        <div class="test-section">
+            <h2>Payment Test Instructions</h2>
+            
+            <div class="step">
+                <div class="step-number">Step 1:</div>
+                <div>Click "Create Test Payment" to generate a new QR code</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Step 2:</div>
+                <div>Open your Bakong wallet app on your phone</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Step 3:</div>
+                <div>Scan the QR code OR click the "Pay with Bakong App" link</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Step 4:</div>
+                <div>Complete the payment in your Bakong app</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Step 5:</div>
+                <div>Click "Check Status" to verify the payment was received</div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Create Test Payment</h3>
+            
+            <button onclick="createTestPayment()">Create Test Payment ($1.00)</button>
+            
+            <div id="payment-result" style="display: none;">
+                <div class="payment-info">
+                    <h4>Payment Created Successfully!</h4>
+                    <p><strong>Amount:</strong> $1.00 USD</p>
+                    <p><strong>Payment ID:</strong> <span id="payment-id"></span></p>
+                    <p><strong>Description:</strong> Payment Status Test</p>
+                </div>
+                
+                <div class="qr-container">
+                    <div id="qr-code"></div>
+                    <p>Scan this QR code with your Bakong wallet app</p>
+                    <a id="deep-link" href="#" class="deep-link" target="_blank">📱 Pay with Bakong App</a>
+                </div>
+                
+                <div class="status-check">
+                    <h4>Check Payment Status</h4>
+                    <button onclick="checkPaymentStatus()">Check Status</button>
+                    <button onclick="startAutoCheck()" id="auto-check-btn">Start Auto-Check (every 5s)</button>
+                    <button onclick="stopAutoCheck()" id="stop-auto-btn" style="display: none;">Stop Auto-Check</button>
+                    
+                    <div id="status-result"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="debug-section" class="test-section">
+            <h3>Debug Information</h3>
+            <div id="debug-info" class="debug-info">
+                Ready to create payment...
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+    <script>
+        let currentPaymentId = null;
+        let autoCheckInterval = null;
+        
+        function log(message) {
+            const debugDiv = document.getElementById('debug-info');
+            const timestamp = new Date().toLocaleTimeString();
+            debugDiv.innerHTML += `[${timestamp}] ${message}\n`;
+            debugDiv.scrollTop = debugDiv.scrollHeight;
+        }
+        
+        async function createTestPayment() {
+            log('Creating test payment...');
+            
+            try {
+                const response = await fetch('/api/payments/create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        amount: 1.00,
+                        currency: 'USD',
+                        description: 'Payment Status Test',
+                        storeLabel: 'Test Store',
+                        billNumber: `TEST_${Date.now()}`
+                    })
+                });
+                
+                const result = await response.json();
+                log(`API Response: ${JSON.stringify(result, null, 2)}`);
+                
+                if (result.success) {
+                    currentPaymentId = result.data.md5Hash;
+                    
+                    // Show payment details
+                    document.getElementById('payment-id').textContent = currentPaymentId;
+                    document.getElementById('deep-link').href = result.data.deepLink;
+                    document.getElementById('payment-result').style.display = 'block';
+                    
+                    // Generate QR code
+                    const qrContainer = document.getElementById('qr-code');
+                    qrContainer.innerHTML = '';
+                    
+                    QRCode.toCanvas(qrContainer, result.data.qrCode, {
+                        width: 256,
+                        margin: 2
+                    });
+                    
+                    log(`Payment created successfully! ID: ${currentPaymentId}`);
+                    log(`Deep Link: ${result.data.deepLink}`);
+                    
+                } else {
+                    log(`Error creating payment: ${result.message}`);
+                    alert('Error creating payment: ' + result.message);
+                }
+                
+            } catch (error) {
+                log(`Error: ${error.message}`);
+                alert('Error creating payment: ' + error.message);
+            }
+        }
+        
+        async function checkPaymentStatus() {
+            if (!currentPaymentId) {
+                alert('Please create a payment first!');
+                return;
+            }
+            
+            log(`Checking status for payment: ${currentPaymentId}`);
+            
+            try {
+                const response = await fetch(`/api/payments/check/${currentPaymentId}`);
+                const result = await response.json();
+                
+                log(`Status check response: ${JSON.stringify(result, null, 2)}`);
+                
+                const statusDiv = document.getElementById('status-result');
+                
+                if (result.success) {
+                    const status = result.data.status;
+                    const statusClass = status === 'PAID' ? 'status-paid' : 'status-unpaid';
+                    
+                    statusDiv.innerHTML = `
+                        <h4>Payment Status: <span class="${statusClass}">${status}</span></h4>
+                        <p><strong>Last Checked:</strong> ${new Date(result.data.checkedAt).toLocaleString()}</p>
+                        ${status === 'PAID' ? `
+                            <div style="background: #d4edda; color: #155724; padding: 10px; border-radius: 4px; margin-top: 10px;">
+                                ✅ Payment received successfully!
+                            </div>
+                        ` : `
+                            <div style="background: #f8d7da; color: #721c24; padding: 10px; border-radius: 4px; margin-top: 10px;">
+                                ❌ Payment not received yet. Please scan and pay the QR code.
+                            </div>
+                        `}
+                    `;
+                    
+                    if (status === 'PAID') {
+                        stopAutoCheck();
+                        log('🎉 Payment confirmed as PAID!');
+                    }
+                    
+                } else {
+                    statusDiv.innerHTML = `<p style="color: red;">Error: ${result.message}</p>`;
+                    log(`Error checking status: ${result.message}`);
+                }
+                
+            } catch (error) {
+                log(`Error checking status: ${error.message}`);
+                document.getElementById('status-result').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        function startAutoCheck() {
+            if (autoCheckInterval) {
+                clearInterval(autoCheckInterval);
+            }
+            
+            document.getElementById('auto-check-btn').style.display = 'none';
+            document.getElementById('stop-auto-btn').style.display = 'inline-block';
+            
+            log('Starting auto-check every 5 seconds...');
+            
+            autoCheckInterval = setInterval(checkPaymentStatus, 5000);
+        }
+        
+        function stopAutoCheck() {
+            if (autoCheckInterval) {
+                clearInterval(autoCheckInterval);
+                autoCheckInterval = null;
+            }
+            
+            document.getElementById('auto-check-btn').style.display = 'inline-block';
+            document.getElementById('stop-auto-btn').style.display = 'none';
+            
+            log('Auto-check stopped');
+        }
+        
+        // Clean up on page unload
+        window.addEventListener('beforeunload', stopAutoCheck);
+    </script>
+</body>
+</html>

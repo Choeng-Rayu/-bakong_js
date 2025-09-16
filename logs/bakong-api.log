@@ -1,0 +1,645 @@
+2025-09-04 16:55:30 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 16:55:36 |     INFO | ::1 - - [04/Sep/2025:09:55:36 +0000] "GET / HTTP/1.1" 200 474 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 16:55:37 |     INFO | ::1 - - [04/Sep/2025:09:55:37 +0000] "GET /favicon.ico HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 16:57:34 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 16:59:05 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 17:01:55 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:02:51 |     INFO | ::1 - - [04/Sep/2025:10:02:51 +0000] "GET /web HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:02:51 |     INFO | ::1 - - [04/Sep/2025:10:02:51 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:02:51 |     INFO | ::1 - - [04/Sep/2025:10:02:51 +0000] "GET /favicon.ico HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:03:15 |     INFO | ::1 - - [04/Sep/2025:10:03:15 +0000] "GET /web? HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:03:15 |     INFO | ::1 - - [04/Sep/2025:10:03:15 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:03:32 |     INFO | ::1 - - [04/Sep/2025:10:03:32 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:03:32 |     INFO | ::1 - - [04/Sep/2025:10:03:32 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:04:09 |     INFO | ::1 - - [04/Sep/2025:10:04:09 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:04:09 |     INFO | ::1 - - [04/Sep/2025:10:04:09 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:05:53 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:07:06 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:07:17 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 17:07:23 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:07:30 |     INFO | 🌐 API Request: GET /health
+2025-09-04 17:07:30 |     INFO | ::1 - - [04/Sep/2025:10:07:30 +0000] "GET /api/health HTTP/1.1" 200 161 "-" "curl/8.5.0"
+2025-09-04 17:07:46 |     INFO | 🌐 API Request: GET /health
+2025-09-04 17:07:46 |     INFO | ::1 - - [04/Sep/2025:10:07:46 +0000] "GET /api/health HTTP/1.1" 200 162 "-" "curl/8.5.0"
+2025-09-04 17:07:52 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:07:52 |     INFO | User session activity
+2025-09-04 17:07:52 |     INFO | 🚀 Creating payment transaction: 416f6339-3993-4c68-ac47-24e1ef3c829e
+2025-09-04 17:07:53 |     INFO | Transaction processed
+2025-09-04 17:07:53 |     INFO | Transaction processed
+2025-09-04 17:07:53 |     INFO | ✅ Payment created successfully: 416f6339-3993-4c68-ac47-24e1ef3c829e (1187ms)
+2025-09-04 17:07:53 |     INFO | User session activity
+2025-09-04 17:07:53 |     INFO | ::1 - - [04/Sep/2025:10:07:53 +0000] "POST /api/payments/create HTTP/1.1" 200 633 "-" "curl/8.5.0"
+2025-09-04 17:08:12 |     INFO | ::1 - - [04/Sep/2025:10:08:12 +0000] "GET /web?id=b036e561-aa25-4333-8bd0-d7e61cd40bc4&vscodeBrowserReqId=1756980492291 HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:11:44 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:11:48 |     INFO | ::1 - - [04/Sep/2025:10:11:48 +0000] "GET /web HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:11:48 |     INFO | ::1 - - [04/Sep/2025:10:11:48 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:11:48 |     INFO | ::1 - - [04/Sep/2025:10:11:48 +0000] "GET /favicon.ico HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:12:11 |     INFO | ::1 - - [04/Sep/2025:10:12:11 +0000] "GET /web? HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:12:11 |     INFO | ::1 - - [04/Sep/2025:10:12:11 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:12:28 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:12:36 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:15:00 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:15:07 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:15:54 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:16:07 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 17:16:14 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:16:24 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:16:24 |     INFO | User session activity
+2025-09-04 17:16:24 |     INFO | 🚀 Creating payment transaction: 11d4ced9-c247-4579-8e55-eb325cf2e9b1
+2025-09-04 17:16:25 |     INFO | Transaction processed
+2025-09-04 17:16:25 |     INFO | Transaction processed
+2025-09-04 17:16:25 |     INFO | ✅ Payment created successfully: 11d4ced9-c247-4579-8e55-eb325cf2e9b1 (1094ms)
+2025-09-04 17:16:25 |     INFO | User session activity
+2025-09-04 17:16:25 |     INFO | ::1 - - [04/Sep/2025:10:16:25 +0000] "POST /api/payments/create HTTP/1.1" 200 645 "-" "curl/8.5.0"
+2025-09-04 17:16:40 |     INFO | ::1 - - [04/Sep/2025:10:16:40 +0000] "GET /web?id=4a5e1e7d-9b72-4927-b196-1e69b9eb3876&vscodeBrowserReqId=1756981000644 HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:17:04 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:17:04 |     INFO | User session activity
+2025-09-04 17:17:04 |     INFO | 🚀 Creating payment transaction: 0c3ca54e-b863-4f9a-960c-dd82fb2dd56a
+2025-09-04 17:17:05 |     INFO | Transaction processed
+2025-09-04 17:17:05 |     INFO | Transaction processed
+2025-09-04 17:17:05 |     INFO | ✅ Payment created successfully: 0c3ca54e-b863-4f9a-960c-dd82fb2dd56a (886ms)
+2025-09-04 17:17:05 |     INFO | User session activity
+2025-09-04 17:17:05 |     INFO | ::1 - - [04/Sep/2025:10:17:05 +0000] "POST /api/payments/create HTTP/1.1" 200 647 "-" "curl/8.5.0"
+2025-09-04 17:18:04 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:18:13 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:18:21 |     INFO | ::1 - - [04/Sep/2025:10:18:21 +0000] "HEAD /temp/qr_FRONTEND002.png HTTP/1.1" 200 3185 "-" "curl/8.5.0"
+2025-09-04 17:18:48 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:18:50 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:19:09 |     INFO | ::1 - - [04/Sep/2025:10:19:09 +0000] "GET /public/test.html?id=4a5e1e7d-9b72-4927-b196-1e69b9eb3876&vscodeBrowserReqId=1756981149167 HTTP/1.1" 200 1658 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:19:14 |     INFO | ::1 - - [04/Sep/2025:10:19:14 +0000] "GET /web?id=ad42e646-e790-4e8c-bca7-d47b156449c7&vscodeBrowserReqId=1756981154064 HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:20:37 |     INFO | ::1 - - [04/Sep/2025:10:20:37 +0000] "GET /web HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:20:37 |     INFO | ::1 - - [04/Sep/2025:10:20:37 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:20:37 |     INFO | ::1 - - [04/Sep/2025:10:20:37 +0000] "GET /favicon.ico HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:20:48 |     INFO | ::1 - - [04/Sep/2025:10:20:48 +0000] "GET /web? HTTP/1.1" 200 13794 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:20:48 |     INFO | ::1 - - [04/Sep/2025:10:20:48 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:22:23 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:22:27 |     INFO | ::1 - - [04/Sep/2025:10:22:27 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:22:28 |     INFO | ::1 - - [04/Sep/2025:10:22:28 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:22:44 |     INFO | ::1 - - [04/Sep/2025:10:22:44 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:22:45 |     INFO | ::1 - - [04/Sep/2025:10:22:45 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:23:52 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:23:52 |     INFO | User session activity
+2025-09-04 17:23:52 |     INFO | 🚀 Creating payment transaction: f57cec8b-b684-4d68-9770-e0c6b978ddfe
+2025-09-04 17:23:53 |     INFO | Transaction processed
+2025-09-04 17:23:53 |     INFO | Transaction processed
+2025-09-04 17:23:53 |     INFO | ✅ Payment created successfully: f57cec8b-b684-4d68-9770-e0c6b978ddfe (1218ms)
+2025-09-04 17:23:53 |     INFO | User session activity
+2025-09-04 17:23:53 |     INFO | ::1 - - [04/Sep/2025:10:23:53 +0000] "POST /api/payments/create HTTP/1.1" 200 637 "-" "curl/8.5.0"
+2025-09-04 17:24:40 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:25:03 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:25:12 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:25:22 |     INFO | ::1 - - [04/Sep/2025:10:25:22 +0000] "GET /web HTTP/1.1" 200 13949 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:25:22 |     INFO | ::1 - - [04/Sep/2025:10:25:22 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:25:40 |     INFO | ::1 - - [04/Sep/2025:10:25:40 +0000] "GET /web? HTTP/1.1" 200 13949 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:25:40 |     INFO | ::1 - - [04/Sep/2025:10:25:40 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:25:56 |     INFO | ::1 - - [04/Sep/2025:10:25:56 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:25:56 |     INFO | ::1 - - [04/Sep/2025:10:25:56 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:26:03 |     INFO | ::1 - - [04/Sep/2025:10:26:03 +0000] "GET /web?id=fa2de319-d459-40d1-acbe-f7ddd78584d0&vscodeBrowserReqId=1756981563486 HTTP/1.1" 200 13949 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:26:58 |     INFO | ::1 - - [04/Sep/2025:10:26:58 +0000] "GET /web? HTTP/1.1" 200 13949 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:26:58 |     INFO | ::1 - - [04/Sep/2025:10:26:58 +0000] "GET /app.js HTTP/1.1" 404 296 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:27:58 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 17:28:35 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:28:50 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 17:28:59 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:29:07 |     INFO | ::1 - - [04/Sep/2025:10:29:07 +0000] "HEAD /public/app.js HTTP/1.1" 200 10858 "-" "curl/8.5.0"
+2025-09-04 17:29:12 |     INFO | ::1 - - [04/Sep/2025:10:29:12 +0000] "GET /web?id=fa2de319-d459-40d1-acbe-f7ddd78584d0&vscodeBrowserReqId=1756981752621 HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:29:21 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:29:21 |     INFO | User session activity
+2025-09-04 17:29:21 |     INFO | 🚀 Creating payment transaction: d04dfa04-9310-4f52-b1a4-df902bd9f5c1
+2025-09-04 17:29:22 |     INFO | Transaction processed
+2025-09-04 17:29:22 |     INFO | Transaction processed
+2025-09-04 17:29:22 |     INFO | ✅ Payment created successfully: d04dfa04-9310-4f52-b1a4-df902bd9f5c1 (396ms)
+2025-09-04 17:29:22 |     INFO | User session activity
+2025-09-04 17:29:22 |     INFO | ::1 - - [04/Sep/2025:10:29:22 +0000] "POST /api/payments/create HTTP/1.1" 200 597 "-" "curl/8.5.0"
+2025-09-04 17:30:04 |     INFO | ::1 - - [04/Sep/2025:10:30:04 +0000] "HEAD /temp/qr_FINAL001.png HTTP/1.1" 200 3269 "-" "curl/8.5.0"
+2025-09-04 17:30:40 |     INFO | ::1 - - [04/Sep/2025:10:30:40 +0000] "GET /public/testsuite.html?id=fa2de319-d459-40d1-acbe-f7ddd78584d0&vscodeBrowserReqId=1756981840763 HTTP/1.1" 200 4090 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:31:01 |     INFO | ::1 - - [04/Sep/2025:10:31:01 +0000] "GET /web? HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:31:01 |     INFO | ::1 - - [04/Sep/2025:10:31:01 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:31:01 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 17:31:01 |     INFO | User session activity
+2025-09-04 17:31:01 |     INFO | User session activity
+2025-09-04 17:31:01 |     INFO | ::1 - - [04/Sep/2025:10:31:01 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 722 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:31:28 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:31:28 |     INFO | User session activity
+2025-09-04 17:31:28 |     INFO | 🚀 Creating payment transaction: ef6984b3-3eab-49a2-8f16-328d204cac81
+2025-09-04 17:31:29 |     INFO | Transaction processed
+2025-09-04 17:31:29 |     INFO | Transaction processed
+2025-09-04 17:31:29 |     INFO | ✅ Payment created successfully: ef6984b3-3eab-49a2-8f16-328d204cac81 (1033ms)
+2025-09-04 17:31:29 |     INFO | User session activity
+2025-09-04 17:31:29 |     INFO | ::1 - - [04/Sep/2025:10:31:29 +0000] "POST /api/payments/create HTTP/1.1" 200 673 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:31:29 |     INFO | ::1 - - [04/Sep/2025:10:31:29 +0000] "GET /temp/qr_BILL1756981888184.png HTTP/1.1" 200 3262 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:33:19 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:33:19 |     INFO | User session activity
+2025-09-04 17:33:19 |     INFO | 🚀 Creating payment transaction: 8e0a7123-88c9-4848-bf00-605ba7bb3cf0
+2025-09-04 17:33:20 |     INFO | Transaction processed
+2025-09-04 17:33:20 |     INFO | Transaction processed
+2025-09-04 17:33:20 |     INFO | ✅ Payment created successfully: 8e0a7123-88c9-4848-bf00-605ba7bb3cf0 (413ms)
+2025-09-04 17:33:20 |     INFO | User session activity
+2025-09-04 17:33:20 |     INFO | ::1 - - [04/Sep/2025:10:33:20 +0000] "POST /api/payments/create HTTP/1.1" 200 604 "-" "curl/8.5.0"
+2025-09-04 17:35:25 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:35:25 |     INFO | User session activity
+2025-09-04 17:35:25 |     INFO | 🚀 Creating payment transaction: e6fd1c12-2de9-4c8d-a4ec-e4d70b3b61df
+2025-09-04 17:35:25 |     INFO | Transaction processed
+2025-09-04 17:35:25 |     INFO | Transaction processed
+2025-09-04 17:35:25 |     INFO | ✅ Payment created successfully: e6fd1c12-2de9-4c8d-a4ec-e4d70b3b61df (446ms)
+2025-09-04 17:35:25 |     INFO | User session activity
+2025-09-04 17:35:25 |     INFO | ::1 - - [04/Sep/2025:10:35:25 +0000] "POST /api/payments/create HTTP/1.1" 200 597 "-" "curl/8.5.0"
+2025-09-04 17:36:15 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:36:38 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:36:49 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:36:49 |     INFO | User session activity
+2025-09-04 17:36:49 |     INFO | 🚀 Creating payment transaction: 7729b69c-21f4-41ee-906d-1434164d0e60
+2025-09-04 17:36:50 |     INFO | Transaction processed
+2025-09-04 17:36:50 |     INFO | Transaction processed
+2025-09-04 17:36:50 |     INFO | ✅ Payment created successfully: 7729b69c-21f4-41ee-906d-1434164d0e60 (559ms)
+2025-09-04 17:36:50 |     INFO | User session activity
+2025-09-04 17:36:50 |     INFO | ::1 - - [04/Sep/2025:10:36:50 +0000] "POST /api/payments/create HTTP/1.1" 200 607 "-" "curl/8.5.0"
+2025-09-04 17:37:03 |     INFO | ::1 - - [04/Sep/2025:10:37:03 +0000] "GET /web?id=fa2de319-d459-40d1-acbe-f7ddd78584d0&vscodeBrowserReqId=1756982223697 HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 17:37:26 |     INFO | ::1 - - [04/Sep/2025:10:37:26 +0000] "GET /web? HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:26 |     INFO | ::1 - - [04/Sep/2025:10:37:26 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:26 |     INFO | ::1 - - [04/Sep/2025:10:37:26 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:26 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 17:37:26 |     INFO | User session activity
+2025-09-04 17:37:26 |     INFO | User session activity
+2025-09-04 17:37:26 |     INFO | ::1 - - [04/Sep/2025:10:37:26 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 732 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:27 |     INFO | ::1 - - [04/Sep/2025:10:37:27 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:27 |     INFO | ::1 - - [04/Sep/2025:10:37:27 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:27 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 17:37:27 |     INFO | User session activity
+2025-09-04 17:37:27 |     INFO | User session activity
+2025-09-04 17:37:27 |     INFO | ::1 - - [04/Sep/2025:10:37:27 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:27 |     INFO | ::1 - - [04/Sep/2025:10:37:27 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:37 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:37:37 |     INFO | User session activity
+2025-09-04 17:37:37 |     INFO | 🚀 Creating payment transaction: 0a744a49-7e9c-462a-a7f9-e3de03f217f2
+2025-09-04 17:37:38 |     INFO | Transaction processed
+2025-09-04 17:37:38 |     INFO | Transaction processed
+2025-09-04 17:37:38 |     INFO | ✅ Payment created successfully: 0a744a49-7e9c-462a-a7f9-e3de03f217f2 (487ms)
+2025-09-04 17:37:38 |     INFO | User session activity
+2025-09-04 17:37:38 |     INFO | ::1 - - [04/Sep/2025:10:37:38 +0000] "POST /api/payments/create HTTP/1.1" 200 641 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:37:38 |     INFO | ::1 - - [04/Sep/2025:10:37:38 +0000] "GET /temp/qr_BILL1756982257776.png HTTP/1.1" 200 3289 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:42:07 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:43:02 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:43:02 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 17:43:55 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 17:43:59 |     INFO | ::1 - - [04/Sep/2025:10:43:59 +0000] "GET /web HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:44:00 |     INFO | ::1 - - [04/Sep/2025:10:44:00 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:44:00 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 17:44:00 |     INFO | User session activity
+2025-09-04 17:44:00 |     INFO | User session activity
+2025-09-04 17:44:00 |     INFO | ::1 - - [04/Sep/2025:10:44:00 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:44:16 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 17:44:16 |     INFO | User session activity
+2025-09-04 17:44:16 |     INFO | 🚀 Creating payment transaction: 5c1047e2-d5cd-4370-928a-c8e8c74ab2a3
+2025-09-04 17:44:16 |     INFO | Transaction processed
+2025-09-04 17:44:16 |     INFO | Transaction processed
+2025-09-04 17:44:16 |     INFO | ✅ Payment created successfully: 5c1047e2-d5cd-4370-928a-c8e8c74ab2a3 (523ms)
+2025-09-04 17:44:16 |     INFO | User session activity
+2025-09-04 17:44:16 |     INFO | ::1 - - [04/Sep/2025:10:44:16 +0000] "POST /api/payments/create HTTP/1.1" 200 643 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 17:44:16 |     INFO | ::1 - - [04/Sep/2025:10:44:16 +0000] "GET /temp/qr_BILL1756982656096.png HTTP/1.1" 200 3182 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:14:58 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:14:58 |     INFO | User session activity
+2025-09-04 21:14:58 |     INFO | 🚀 Creating payment transaction: 5042b3c4-0a48-4d55-98a6-4508494515ac
+2025-09-04 21:14:59 |     INFO | Transaction processed
+2025-09-04 21:14:59 |     INFO | Transaction processed
+2025-09-04 21:14:59 |     INFO | ✅ Payment created successfully: 5042b3c4-0a48-4d55-98a6-4508494515ac (1173ms)
+2025-09-04 21:14:59 |     INFO | User session activity
+2025-09-04 21:14:59 |     INFO | ::1 - - [04/Sep/2025:14:14:59 +0000] "POST /api/payments/create HTTP/1.1" 200 646 "-" "curl/8.5.0"
+2025-09-04 21:18:10 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:21:54 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 21:22:05 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:22:17 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:22:17 |     INFO | User session activity
+2025-09-04 21:22:17 |     INFO | 🚀 Creating payment transaction: 857b1067-2572-4e7f-9d6b-253553f8c1d2
+2025-09-04 21:22:18 |     INFO | Transaction processed
+2025-09-04 21:22:18 |     INFO | Transaction processed
+2025-09-04 21:22:18 |     INFO | ✅ Payment created successfully: 857b1067-2572-4e7f-9d6b-253553f8c1d2 (991ms)
+2025-09-04 21:22:18 |     INFO | User session activity
+2025-09-04 21:22:18 |     INFO | ::1 - - [04/Sep/2025:14:22:18 +0000] "POST /api/payments/create HTTP/1.1" 200 642 "-" "curl/8.5.0"
+2025-09-04 21:22:22 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:22:22 |     INFO | User session activity
+2025-09-04 21:22:22 |     INFO | 🚀 Creating payment transaction: 32a04150-ad89-43b8-b235-d67a61e99fc7
+2025-09-04 21:22:23 |     INFO | Transaction processed
+2025-09-04 21:22:23 |     INFO | Transaction processed
+2025-09-04 21:22:23 |     INFO | ✅ Payment created successfully: 32a04150-ad89-43b8-b235-d67a61e99fc7 (785ms)
+2025-09-04 21:22:23 |     INFO | User session activity
+2025-09-04 21:22:23 |     INFO | ::1 - - [04/Sep/2025:14:22:23 +0000] "POST /api/payments/create HTTP/1.1" 200 642 "-" "curl/8.5.0"
+2025-09-04 21:23:29 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 21:23:40 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:23:54 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:23:54 |     INFO | User session activity
+2025-09-04 21:23:54 |     INFO | 🚀 Creating payment transaction: 38f240b1-5aa1-4606-b8d6-0048150031b9
+2025-09-04 21:23:56 |     INFO | Transaction processed
+2025-09-04 21:23:56 |     INFO | Transaction processed
+2025-09-04 21:23:56 |     INFO | ✅ Payment created successfully: 38f240b1-5aa1-4606-b8d6-0048150031b9 (1131ms)
+2025-09-04 21:23:56 |     INFO | User session activity
+2025-09-04 21:23:56 |     INFO | ::1 - - [04/Sep/2025:14:23:56 +0000] "POST /api/payments/create HTTP/1.1" 200 643 "-" "curl/8.5.0"
+2025-09-04 21:24:23 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:24:23 |     INFO | User session activity
+2025-09-04 21:24:23 |     INFO | 🚀 Creating payment transaction: 1852c4ec-5f2e-4173-8cb5-df423a6230cb
+2025-09-04 21:24:24 |     INFO | Transaction processed
+2025-09-04 21:24:24 |     INFO | Transaction processed
+2025-09-04 21:24:24 |     INFO | ✅ Payment created successfully: 1852c4ec-5f2e-4173-8cb5-df423a6230cb (1019ms)
+2025-09-04 21:24:24 |     INFO | User session activity
+2025-09-04 21:24:24 |     INFO | ::1 - - [04/Sep/2025:14:24:24 +0000] "POST /api/payments/create HTTP/1.1" 200 643 "-" "curl/8.5.0"
+2025-09-04 21:24:33 |     INFO | ::1 - - [04/Sep/2025:14:24:33 +0000] "GET /web?id=1513f6d6-1fc6-490a-8d2f-e1b1dcb322b8&vscodeBrowserReqId=1756995873530 HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 21:24:36 |     INFO | ::1 - - [04/Sep/2025:14:24:36 +0000] "GET /web?id=1513f6d6-1fc6-490a-8d2f-e1b1dcb322b8&vscodeBrowserReqId=1756995876825 HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 21:24:46 |     INFO | ::1 - - [04/Sep/2025:14:24:46 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:24:46 |     INFO | ::1 - - [04/Sep/2025:14:24:46 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:24:46 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 21:24:46 |     INFO | User session activity
+2025-09-04 21:24:46 |     INFO | User session activity
+2025-09-04 21:24:46 |     INFO | ::1 - - [04/Sep/2025:14:24:46 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 1424 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:24:59 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:24:59 |     INFO | User session activity
+2025-09-04 21:24:59 |     INFO | 🚀 Creating payment transaction: bc2ac8b4-5295-4af0-b622-75a682a682a7
+2025-09-04 21:25:01 |     INFO | Transaction processed
+2025-09-04 21:25:01 |     INFO | Transaction processed
+2025-09-04 21:25:01 |     INFO | ✅ Payment created successfully: bc2ac8b4-5295-4af0-b622-75a682a682a7 (2053ms)
+2025-09-04 21:25:01 |     INFO | User session activity
+2025-09-04 21:25:01 |     INFO | ::1 - - [04/Sep/2025:14:25:01 +0000] "POST /api/payments/create HTTP/1.1" 200 640 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:25:01 |     INFO | ::1 - - [04/Sep/2025:14:25:01 +0000] "GET /temp/qr_BILL1756995899163.png HTTP/1.1" 200 3264 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:26:19 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:26:19 |     INFO | User session activity
+2025-09-04 21:26:19 |     INFO | 🚀 Creating payment transaction: 3bc6a41b-12a2-462f-8a81-56dacb8102fb
+2025-09-04 21:26:22 |     INFO | Transaction processed
+2025-09-04 21:26:22 |     INFO | Transaction processed
+2025-09-04 21:26:22 |     INFO | ✅ Payment created successfully: 3bc6a41b-12a2-462f-8a81-56dacb8102fb (3409ms)
+2025-09-04 21:26:22 |     INFO | User session activity
+2025-09-04 21:26:22 |     INFO | ::1 - - [04/Sep/2025:14:26:22 +0000] "POST /api/payments/create HTTP/1.1" 200 640 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:26:22 |     INFO | ::1 - - [04/Sep/2025:14:26:22 +0000] "GET /temp/qr_BILL1756995979285.png HTTP/1.1" 200 3286 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:27:45 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:27:45 |     INFO | User session activity
+2025-09-04 21:27:45 |     INFO | 🚀 Creating payment transaction: 794c82bd-3455-46b4-a9c6-3ccacce8429a
+2025-09-04 21:27:46 |     INFO | Transaction processed
+2025-09-04 21:27:46 |     INFO | Transaction processed
+2025-09-04 21:27:46 |     INFO | ✅ Payment created successfully: 794c82bd-3455-46b4-a9c6-3ccacce8429a (1391ms)
+2025-09-04 21:27:46 |     INFO | User session activity
+2025-09-04 21:27:46 |     INFO | ::1 - - [04/Sep/2025:14:27:46 +0000] "POST /api/payments/create HTTP/1.1" 200 659 "-" "curl/8.5.0"
+2025-09-04 21:28:00 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:28:00 |     INFO | User session activity
+2025-09-04 21:28:00 |     INFO | 🚀 Creating payment transaction: 93736f3a-aa3f-4778-b05d-75ee492a239c
+2025-09-04 21:28:02 |     INFO | Transaction processed
+2025-09-04 21:28:02 |     INFO | Transaction processed
+2025-09-04 21:28:02 |     INFO | ✅ Payment created successfully: 93736f3a-aa3f-4778-b05d-75ee492a239c (2425ms)
+2025-09-04 21:28:02 |     INFO | User session activity
+2025-09-04 21:28:02 |     INFO | ::1 - - [04/Sep/2025:14:28:02 +0000] "POST /api/payments/create HTTP/1.1" 200 619 "-" "curl/8.5.0"
+2025-09-04 21:28:10 |     INFO | 🌐 API Request: GET /payments/check/6b0241c773a5ec649c54c36f3a0f1060
+2025-09-04 21:28:10 |     INFO | User session activity
+2025-09-04 21:28:10 |     INFO | 🔍 Checking payment status: 6b0241c773a5ec649c54c36f3a0f1060
+2025-09-04 21:28:11 |     INFO | Transaction processed
+2025-09-04 21:28:11 |     INFO | 📊 Payment status checked: 6b0241c773a5ec649c54c36f3a0f1060 - UNPAID
+2025-09-04 21:28:11 |     INFO | User session activity
+2025-09-04 21:28:11 |     INFO | ::1 - - [04/Sep/2025:14:28:11 +0000] "GET /api/payments/check/6b0241c773a5ec649c54c36f3a0f1060 HTTP/1.1" 200 251 "-" "curl/8.5.0"
+2025-09-04 21:30:16 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 21:30:28 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:30:51 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:31:03 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:31:48 |     INFO | 🌐 API Request: GET /payments/check/6b0241c773a5ec649c54c36f3a0f1060
+2025-09-04 21:31:48 |     INFO | User session activity
+2025-09-04 21:31:48 |     INFO | 🔍 Checking payment status: 6b0241c773a5ec649c54c36f3a0f1060
+2025-09-04 21:31:49 |     INFO | Transaction processed
+2025-09-04 21:31:49 |     INFO | 📊 Payment status checked: 6b0241c773a5ec649c54c36f3a0f1060 - UNPAID
+2025-09-04 21:31:49 |     INFO | User session activity
+2025-09-04 21:31:49 |     INFO | ::1 - - [04/Sep/2025:14:31:49 +0000] "GET /api/payments/check/6b0241c773a5ec649c54c36f3a0f1060 HTTP/1.1" 200 251 "-" "curl/8.5.0"
+2025-09-04 21:32:57 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:32:57 |     INFO | User session activity
+2025-09-04 21:32:57 |     INFO | 🚀 Creating payment transaction: 68acecb5-0651-4457-9b34-025e2bb97b70
+2025-09-04 21:32:58 |     INFO | Transaction processed
+2025-09-04 21:32:58 |     INFO | Transaction processed
+2025-09-04 21:32:58 |     INFO | ✅ Payment created successfully: 68acecb5-0651-4457-9b34-025e2bb97b70 (1414ms)
+2025-09-04 21:32:58 |     INFO | User session activity
+2025-09-04 21:32:58 |     INFO | ::1 - - [04/Sep/2025:14:32:58 +0000] "POST /api/payments/create HTTP/1.1" 200 674 "-" "curl/8.5.0"
+2025-09-04 21:34:19 |     INFO | 🌐 API Request: GET /payments/status/dda134fb2381d2bf04ca26fb62a0fda6
+2025-09-04 21:34:19 |     INFO | ::1 - - [04/Sep/2025:14:34:19 +0000] "GET /api/payments/status/dda134fb2381d2bf04ca26fb62a0fda6 HTTP/1.1" 404 296 "-" "curl/8.5.0"
+2025-09-04 21:35:14 |     INFO | 🌐 API Request: GET /payments/check/dda134fb2381d2bf04ca26fb62a0fda6
+2025-09-04 21:35:14 |     INFO | User session activity
+2025-09-04 21:35:14 |     INFO | 🔍 Checking payment status: dda134fb2381d2bf04ca26fb62a0fda6
+2025-09-04 21:35:16 |     INFO | Transaction processed
+2025-09-04 21:35:16 |     INFO | 📊 Payment status checked: dda134fb2381d2bf04ca26fb62a0fda6 - UNPAID
+2025-09-04 21:35:16 |     INFO | User session activity
+2025-09-04 21:35:16 |     INFO | ::1 - - [04/Sep/2025:14:35:16 +0000] "GET /api/payments/check/dda134fb2381d2bf04ca26fb62a0fda6 HTTP/1.1" 200 251 "-" "curl/8.5.0"
+2025-09-04 21:37:34 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 21:37:36 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:38:50 |     INFO | ::1 - - [04/Sep/2025:14:38:50 +0000] "GET /test?id=0e5d06d9-3d8f-47ab-b52a-19ac266e2bcf&vscodeBrowserReqId=1756996730647 HTTP/1.1" 200 12648 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 21:39:02 |     INFO | ::1 - - [04/Sep/2025:14:39:02 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:39:02 |     INFO | ::1 - - [04/Sep/2025:14:39:02 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:39:02 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 21:39:02 |     INFO | User session activity
+2025-09-04 21:39:02 |     INFO | User session activity
+2025-09-04 21:39:02 |     INFO | ::1 - - [04/Sep/2025:14:39:02 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:39:14 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:39:14 |     INFO | User session activity
+2025-09-04 21:39:14 |     INFO | 🚀 Creating payment transaction: e576a55c-b934-49cc-9e77-98d1cd727ed1
+2025-09-04 21:39:14 |     INFO | Transaction processed
+2025-09-04 21:39:14 |     INFO | Transaction processed
+2025-09-04 21:39:14 |     INFO | ✅ Payment created successfully: e576a55c-b934-49cc-9e77-98d1cd727ed1 (655ms)
+2025-09-04 21:39:14 |     INFO | User session activity
+2025-09-04 21:39:14 |     INFO | ::1 - - [04/Sep/2025:14:39:14 +0000] "POST /api/payments/create HTTP/1.1" 200 640 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:39:14 |     INFO | ::1 - - [04/Sep/2025:14:39:14 +0000] "GET /temp/qr_BILL1756996754038.png HTTP/1.1" 200 3259 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:42:15 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:42:43 |     INFO | 🔍 Checking payment status: 9ebded61f7534b5126b164fdb411b89a
+2025-09-04 21:42:43 |     INFO | Transaction processed
+2025-09-04 21:42:43 |     INFO | 📊 Payment status checked: 9ebded61f7534b5126b164fdb411b89a - UNPAID
+2025-09-04 21:46:04 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:46:34 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 21:46:37 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:46:43 |     INFO | ::1 - - [04/Sep/2025:14:46:43 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:46:43 |     INFO | ::1 - - [04/Sep/2025:14:46:43 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:46:43 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 21:46:43 |     INFO | User session activity
+2025-09-04 21:46:43 |     INFO | User session activity
+2025-09-04 21:46:43 |     INFO | ::1 - - [04/Sep/2025:14:46:43 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:47:00 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:47:39 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:48:02 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:48:18 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:48:30 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:48:42 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:48:53 |     INFO | 🌐 API Request: GET /health
+2025-09-04 21:48:53 |     INFO | ::1 - - [04/Sep/2025:14:48:53 +0000] "GET /api/health HTTP/1.1" 200 162 "-" "curl/8.5.0"
+2025-09-04 21:48:59 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 21:49:14 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 21:50:49 |     INFO | ::1 - - [04/Sep/2025:14:50:49 +0000] "GET /web? HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:50:49 |     INFO | ::1 - - [04/Sep/2025:14:50:49 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:50:49 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 21:50:49 |     INFO | User session activity
+2025-09-04 21:50:49 |     INFO | User session activity
+2025-09-04 21:50:49 |     INFO | ::1 - - [04/Sep/2025:14:50:49 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:51:05 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 21:51:05 |     INFO | User session activity
+2025-09-04 21:51:05 |     INFO | 🚀 Creating payment transaction: 3f0d298e-6955-4b6c-bb45-681e6a453983
+2025-09-04 21:51:06 |     INFO | Transaction processed
+2025-09-04 21:51:06 |     INFO | Transaction processed
+2025-09-04 21:51:06 |     INFO | ✅ Payment created successfully: 3f0d298e-6955-4b6c-bb45-681e6a453983 (1036ms)
+2025-09-04 21:51:06 |     INFO | User session activity
+2025-09-04 21:51:06 |     INFO | ::1 - - [04/Sep/2025:14:51:06 +0000] "POST /api/payments/create HTTP/1.1" 200 640 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 21:51:06 |     INFO | ::1 - - [04/Sep/2025:14:51:06 +0000] "GET /temp/qr_BILL1756997465107.png HTTP/1.1" 200 3305 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:00:55 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:02:04 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 22:02:04 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:02:16 |     INFO | ::1 - - [04/Sep/2025:15:02:16 +0000] "GET /test?id=0e5d06d9-3d8f-47ab-b52a-19ac266e2bcf&vscodeBrowserReqId=1756998136849 HTTP/1.1" 200 12648 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 22:03:16 |     INFO | ::1 - - [04/Sep/2025:15:03:16 +0000] "GET /web HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:16 |     INFO | ::1 - - [04/Sep/2025:15:03:16 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:16 |     INFO | ::1 - - [04/Sep/2025:15:03:16 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:16 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:03:16 |     INFO | User session activity
+2025-09-04 22:03:16 |     INFO | User session activity
+2025-09-04 22:03:16 |     INFO | ::1 - - [04/Sep/2025:15:03:16 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:17 |     INFO | ::1 - - [04/Sep/2025:15:03:17 +0000] "GET /favicon.ico HTTP/1.1" 404 308 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:30 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:03:30 |     INFO | User session activity
+2025-09-04 22:03:30 |     INFO | 🚀 Creating payment transaction: 3cb0ee8a-f37a-4041-884e-7ce7b87d8e3b
+2025-09-04 22:03:31 |     INFO | Transaction processed
+2025-09-04 22:03:31 |     INFO | Transaction processed
+2025-09-04 22:03:31 |     INFO | ✅ Payment created successfully: 3cb0ee8a-f37a-4041-884e-7ce7b87d8e3b (1263ms)
+2025-09-04 22:03:31 |     INFO | User session activity
+2025-09-04 22:03:31 |     INFO | ::1 - - [04/Sep/2025:15:03:31 +0000] "POST /api/payments/create HTTP/1.1" 200 684 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:03:31 |     INFO | ::1 - - [04/Sep/2025:15:03:31 +0000] "GET /temp/qr_BILL1756998210135.png HTTP/1.1" 200 3300 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:05:22 |     INFO | ::1 - - [04/Sep/2025:15:05:22 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 308 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:06:44 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 22:07:35 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:07:58 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 22:09:21 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:09:31 |     INFO | ::1 - - [04/Sep/2025:15:09:31 +0000] "GET /web HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:09:32 |     INFO | ::1 - - [04/Sep/2025:15:09:32 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:09:32 |     INFO | ::1 - - [04/Sep/2025:15:09:32 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:09:32 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:09:32 |     INFO | User session activity
+2025-09-04 22:09:32 |     INFO | User session activity
+2025-09-04 22:09:32 |     INFO | ::1 - - [04/Sep/2025:15:09:32 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:09:32 |     INFO | ::1 - - [04/Sep/2025:15:09:32 +0000] "GET /favicon.ico HTTP/1.1" 404 308 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:10:07 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:10:51 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:10:57 |     INFO | ::1 - - [04/Sep/2025:15:10:57 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:10:57 |     INFO | ::1 - - [04/Sep/2025:15:10:57 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:10:57 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:10:57 |     INFO | User session activity
+2025-09-04 22:10:57 |     INFO | User session activity
+2025-09-04 22:10:57 |     INFO | ::1 - - [04/Sep/2025:15:10:57 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:11:11 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:11:11 |     INFO | User session activity
+2025-09-04 22:11:11 |     INFO | 🚀 Creating payment transaction: f303bac4-b8e1-4cde-b9b9-70fb61eb8f39
+2025-09-04 22:11:11 |     INFO | Transaction processed
+2025-09-04 22:11:11 |     INFO | Transaction processed
+2025-09-04 22:11:11 |     INFO | ✅ Payment created successfully: f303bac4-b8e1-4cde-b9b9-70fb61eb8f39 (733ms)
+2025-09-04 22:11:11 |     INFO | User session activity
+2025-09-04 22:11:11 |     INFO | ::1 - - [04/Sep/2025:15:11:11 +0000] "POST /api/payments/create HTTP/1.1" 200 644 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:11:11 |     INFO | ::1 - - [04/Sep/2025:15:11:11 +0000] "GET /temp/qr_BILL1756998671072.png HTTP/1.1" 200 3227 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:12:11 |     INFO | ::1 - - [04/Sep/2025:15:12:11 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:12:11 |     INFO | ::1 - - [04/Sep/2025:15:12:11 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:12:11 |     INFO | ::1 - - [04/Sep/2025:15:12:11 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:12:11 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:12:11 |     INFO | User session activity
+2025-09-04 22:12:11 |     INFO | User session activity
+2025-09-04 22:12:11 |     INFO | ::1 - - [04/Sep/2025:15:12:11 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 772 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:15:20 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:15:51 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:16:18 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:16:29 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:16:55 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:17:48 |     INFO | 🔍 Checking payment status: f4b1a15c63f88812d6ece8f6a936b3cc
+2025-09-04 22:17:49 |     INFO | 🎉 PAYMENT SUCCESSFULLY COMPLETED
+2025-09-04 22:17:49 |     INFO | Transaction processed
+2025-09-04 22:17:49 |     INFO | 📊 Payment status checked: f4b1a15c63f88812d6ece8f6a936b3cc - PAID
+2025-09-04 22:18:14 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 22:18:14 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 22:18:15 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:18:30 |     INFO | ::1 - - [04/Sep/2025:15:18:30 +0000] "GET /test?id=f8ced1e6-3e1a-4b6b-ba14-36ef449fbf57&vscodeBrowserReqId=1756999110055 HTTP/1.1" 200 12648 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 22:18:46 |     INFO | ::1 - - [04/Sep/2025:15:18:46 +0000] "GET /web HTTP/1.1" 200 13957 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:18:46 |     INFO | ::1 - - [04/Sep/2025:15:18:46 +0000] "GET /public/app.js HTTP/1.1" 200 10858 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:18:46 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:18:46 |     INFO | User session activity
+2025-09-04 22:18:46 |     INFO | User session activity
+2025-09-04 22:18:46 |     INFO | ::1 - - [04/Sep/2025:15:18:46 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:18:46 |     INFO | ::1 - - [04/Sep/2025:15:18:46 +0000] "GET /favicon.ico HTTP/1.1" 404 308 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:19:03 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:19:03 |     INFO | User session activity
+2025-09-04 22:19:03 |     INFO | 🚀 Creating payment transaction: c95caee0-ed69-4392-bf27-c354248b4c12
+2025-09-04 22:19:04 |     INFO | Transaction processed
+2025-09-04 22:19:04 |     INFO | Transaction processed
+2025-09-04 22:19:04 |     INFO | ✅ Payment created successfully: c95caee0-ed69-4392-bf27-c354248b4c12 (715ms)
+2025-09-04 22:19:04 |     INFO | User session activity
+2025-09-04 22:19:04 |     INFO | ::1 - - [04/Sep/2025:15:19:04 +0000] "POST /api/payments/create HTTP/1.1" 200 644 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:19:04 |     INFO | ::1 - - [04/Sep/2025:15:19:04 +0000] "GET /temp/qr_BILL1756999143963.png HTTP/1.1" 200 3271 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:22:19 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 22:24:35 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:24:54 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 22:25:27 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:25:27 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:31:22 |     INFO | 🔍 Checking payment status: a2f735a47734f3ffee962821867ff48a
+2025-09-04 22:31:23 |     INFO | 🎉 PAYMENT SUCCESSFULLY COMPLETED
+2025-09-04 22:31:23 |     INFO | Transaction processed
+2025-09-04 22:31:23 |     INFO | 📊 Payment status checked: a2f735a47734f3ffee962821867ff48a - PAID
+2025-09-04 22:32:20 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:33:09 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:33:10 |     INFO | ::1 - - [04/Sep/2025:15:33:10 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:33:10 |     INFO | ::1 - - [04/Sep/2025:15:33:10 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:33:10 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:33:10 |     INFO | User session activity
+2025-09-04 22:33:10 |     INFO | User session activity
+2025-09-04 22:33:10 |     INFO | ::1 - - [04/Sep/2025:15:33:10 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 111 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:33:15 |     INFO | ::1 - - [04/Sep/2025:15:33:15 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:33:15 |     INFO | ::1 - - [04/Sep/2025:15:33:15 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:33:15 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:33:15 |     INFO | User session activity
+2025-09-04 22:33:15 |     INFO | User session activity
+2025-09-04 22:33:15 |     INFO | ::1 - - [04/Sep/2025:15:33:15 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:35:08 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:35:08 |     INFO | User session activity
+2025-09-04 22:35:08 |     INFO | 🚀 Creating payment transaction: ce6d41e8-2380-427e-b010-2e1e79870415
+2025-09-04 22:35:09 |     INFO | Transaction processed
+2025-09-04 22:35:09 |     INFO | Transaction processed
+2025-09-04 22:35:09 |     INFO | ✅ Payment created successfully: ce6d41e8-2380-427e-b010-2e1e79870415 (898ms)
+2025-09-04 22:35:09 |     INFO | User session activity
+2025-09-04 22:35:09 |     INFO | ::1 - - [04/Sep/2025:15:35:09 +0000] "POST /api/payments/create HTTP/1.1" 200 644 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:35:09 |     INFO | ::1 - - [04/Sep/2025:15:35:09 +0000] "GET /temp/qr_BILL1757000108169.png HTTP/1.1" 200 3284 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:36:27 |     INFO | ::1 - - [04/Sep/2025:15:36:27 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:36:27 |     INFO | ::1 - - [04/Sep/2025:15:36:27 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:36:27 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:36:27 |     INFO | User session activity
+2025-09-04 22:36:27 |     INFO | User session activity
+2025-09-04 22:36:27 |     INFO | ::1 - - [04/Sep/2025:15:36:27 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 200 772 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:37:23 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:37:23 |     INFO | User session activity
+2025-09-04 22:37:23 |     INFO | 🚀 Creating payment transaction: edcd820e-e699-4bb3-bfa9-f67963569092
+2025-09-04 22:37:24 |     INFO | Transaction processed
+2025-09-04 22:37:24 |     INFO | Transaction processed
+2025-09-04 22:37:24 |     INFO | ✅ Payment created successfully: edcd820e-e699-4bb3-bfa9-f67963569092 (1329ms)
+2025-09-04 22:37:24 |     INFO | User session activity
+2025-09-04 22:37:24 |     INFO | ::1 - - [04/Sep/2025:15:37:24 +0000] "POST /api/payments/create HTTP/1.1" 200 683 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:37:24 |     INFO | ::1 - - [04/Sep/2025:15:37:24 +0000] "GET /temp/qr_BILL1757000243002.png HTTP/1.1" 200 3278 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:38:13 |     INFO | 🔍 Checking payment status: f4413604d27ede417b1cdf6243904771
+2025-09-04 22:38:14 |     INFO | Transaction processed
+2025-09-04 22:38:14 |     INFO | 📊 Payment status checked: f4413604d27ede417b1cdf6243904771 - UNPAID
+2025-09-04 22:38:18 |     INFO | 🔍 Checking payment status: f4413604d27ede417b1cdf6243904771
+2025-09-04 22:38:18 |     INFO | Transaction processed
+2025-09-04 22:38:18 |     INFO | 📊 Payment status checked: f4413604d27ede417b1cdf6243904771 - UNPAID
+2025-09-04 22:38:23 |     INFO | 🔍 Checking payment status: f4413604d27ede417b1cdf6243904771
+2025-09-04 22:38:23 |     INFO | Transaction processed
+2025-09-04 22:38:23 |     INFO | 📊 Payment status checked: f4413604d27ede417b1cdf6243904771 - UNPAID
+2025-09-04 22:38:28 |     INFO | 🔍 Checking payment status: f4413604d27ede417b1cdf6243904771
+2025-09-04 22:38:28 |     INFO | Transaction processed
+2025-09-04 22:38:28 |     INFO | 📊 Payment status checked: f4413604d27ede417b1cdf6243904771 - UNPAID
+2025-09-04 22:38:33 |     INFO | 🔍 Checking payment status: f4413604d27ede417b1cdf6243904771
+2025-09-04 22:38:33 |     INFO | 🎉 PAYMENT SUCCESSFULLY COMPLETED
+2025-09-04 22:38:33 |     INFO | Transaction processed
+2025-09-04 22:38:33 |     INFO | 📊 Payment status checked: f4413604d27ede417b1cdf6243904771 - PAID
+2025-09-04 22:42:54 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:43:23 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:44:04 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:51:08 |     INFO | 🛑 SIGTERM received, shutting down gracefully
+2025-09-04 22:52:16 |     INFO | 🤖 Auto Payment Monitor connected to PaymentService
+2025-09-04 22:52:16 |     INFO | 🤖 Auto Payment Monitor service started
+2025-09-04 22:52:16 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 22:52:47 |     INFO | ::1 - - [04/Sep/2025:15:52:47 +0000] "GET /?id=f8ced1e6-3e1a-4b6b-ba14-36ef449fbf57&vscodeBrowserReqId=1757001167165 HTTP/1.1" 200 496 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 22:53:46 |     INFO | ::1 - - [04/Sep/2025:15:53:46 +0000] "GET /web HTTP/1.1" 200 14585 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:53:46 |     INFO | ::1 - - [04/Sep/2025:15:53:46 +0000] "GET /public/app.js HTTP/1.1" 200 16491 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:53:46 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 22:53:46 |     INFO | User session activity
+2025-09-04 22:53:46 |     INFO | User session activity
+2025-09-04 22:53:46 |     INFO | ::1 - - [04/Sep/2025:15:53:46 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:54:27 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 22:54:27 |     INFO | User session activity
+2025-09-04 22:54:27 |     INFO | 🚀 Creating payment transaction: 179b0a1f-ef86-4285-beaf-e10eb13dfccf
+2025-09-04 22:54:28 |     INFO | Transaction processed
+2025-09-04 22:54:28 |     INFO | Transaction processed
+2025-09-04 22:54:28 |     INFO | ✅ Payment created successfully: 179b0a1f-ef86-4285-beaf-e10eb13dfccf (1331ms)
+2025-09-04 22:54:28 |     INFO | User session activity
+2025-09-04 22:54:28 |     INFO | ::1 - - [04/Sep/2025:15:54:28 +0000] "POST /api/payments/create HTTP/1.1" 200 684 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 22:54:28 |     INFO | ::1 - - [04/Sep/2025:15:54:28 +0000] "GET /temp/qr_BILL1757001267394.png HTTP/1.1" 200 3290 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:03:42 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 23:07:23 |     INFO | 🤖 Auto Payment Monitor connected to PaymentService
+2025-09-04 23:07:23 |     INFO | 🤖 Auto Payment Monitor service started
+2025-09-04 23:07:23 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 23:08:33 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 23:13:09 |     INFO | 🤖 Auto Payment Monitor connected to PaymentService
+2025-09-04 23:13:09 |     INFO | 🤖 Auto Payment Monitor service started
+2025-09-04 23:13:09 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 23:13:54 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-04 23:14:25 |     INFO | 🤖 Auto Payment Monitor connected to PaymentService
+2025-09-04 23:14:25 |     INFO | 🤖 Auto Payment Monitor service started
+2025-09-04 23:14:25 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-04 23:17:45 |     INFO | ::1 - - [04/Sep/2025:16:17:45 +0000] "GET /web?id=f8ced1e6-3e1a-4b6b-ba14-36ef449fbf57&vscodeBrowserReqId=1757002665167 HTTP/1.1" 200 14585 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.103.2 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36"
+2025-09-04 23:18:12 |     INFO | ::1 - - [04/Sep/2025:16:18:12 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:18:12 |     INFO | ::1 - - [04/Sep/2025:16:18:12 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:18:12 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-04 23:18:12 |     INFO | User session activity
+2025-09-04 23:18:12 |     INFO | User session activity
+2025-09-04 23:18:12 |     INFO | ::1 - - [04/Sep/2025:16:18:12 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:18:22 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-04 23:18:22 |     INFO | User session activity
+2025-09-04 23:18:22 |     INFO | 🚀 Creating payment transaction: fcda5e1e-37f8-413a-b4b6-d62943278c59
+2025-09-04 23:18:22 |     INFO | Transaction processed
+2025-09-04 23:18:22 |     INFO | Transaction processed
+2025-09-04 23:18:22 |     INFO | 🎯 Auto-monitoring started for payment
+2025-09-04 23:18:22 |     INFO | ✅ Payment created successfully: fcda5e1e-37f8-413a-b4b6-d62943278c59 (896ms)
+2025-09-04 23:18:22 |     INFO | User session activity
+2025-09-04 23:18:22 |     INFO | ::1 - - [04/Sep/2025:16:18:22 +0000] "POST /api/payments/create HTTP/1.1" 200 643 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:18:23 |     INFO | ::1 - - [04/Sep/2025:16:18:23 +0000] "GET /temp/qr_BILL1757002702089.png HTTP/1.1" 200 3259 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-04 23:18:25 |     INFO | 🔍 Checking payment status: 7b3d200dc7e0a2a5dc0edd75c9040667
+2025-09-04 23:18:26 |     INFO | Transaction processed
+2025-09-04 23:18:26 |     INFO | 📊 Payment status checked: 7b3d200dc7e0a2a5dc0edd75c9040667 - UNPAID
+2025-09-04 23:18:36 |     INFO | 🔍 Checking payment status: 7b3d200dc7e0a2a5dc0edd75c9040667
+2025-09-04 23:18:36 |     INFO | Transaction processed
+2025-09-04 23:18:36 |     INFO | 📊 Payment status checked: 7b3d200dc7e0a2a5dc0edd75c9040667 - UNPAID
+2025-09-04 23:18:46 |     INFO | 🔍 Checking payment status: 7b3d200dc7e0a2a5dc0edd75c9040667
+2025-09-04 23:18:47 |     INFO | Transaction processed
+2025-09-04 23:18:47 |     INFO | 📊 Payment status checked: 7b3d200dc7e0a2a5dc0edd75c9040667 - UNPAID
+2025-09-04 23:18:57 |     INFO | 🔍 Checking payment status: 7b3d200dc7e0a2a5dc0edd75c9040667
+2025-09-04 23:18:58 |     INFO | 🎉 PAYMENT SUCCESSFULLY COMPLETED
+2025-09-04 23:18:58 |     INFO | Transaction processed
+2025-09-04 23:18:58 |     INFO | 📊 Payment status checked: 7b3d200dc7e0a2a5dc0edd75c9040667 - PAID
+2025-09-04 23:18:58 |     INFO | 🎊 Auto-monitor detected payment success
+2025-09-04 23:19:01 |     INFO | 🛑 SIGINT received, shutting down gracefully
+2025-09-07 13:18:54 |     INFO | 🤖 Auto Payment Monitor connected to PaymentService
+2025-09-07 13:18:54 |     INFO | 🤖 Auto Payment Monitor service started
+2025-09-07 13:18:54 |     INFO | 🚀 Bakong KHQR Payment API Server Started
+2025-09-07 13:20:06 |     INFO | ::1 - - [07/Sep/2025:06:20:06 +0000] "GET /web HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:06 |     INFO | ::1 - - [07/Sep/2025:06:20:06 +0000] "GET /public/app.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:06 |     INFO | 🌐 API Request: GET /payments/history
+2025-09-07 13:20:06 |     INFO | User session activity
+2025-09-07 13:20:06 |     INFO | User session activity
+2025-09-07 13:20:06 |     INFO | ::1 - - [07/Sep/2025:06:20:06 +0000] "GET /api/payments/history?limit=50 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:06 |     INFO | ::1 - - [07/Sep/2025:06:20:06 +0000] "GET /favicon.ico HTTP/1.1" 404 308 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:25 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-07 13:20:25 |     INFO | User session activity
+2025-09-07 13:20:25 |     INFO | 🚀 Creating payment transaction: c190a1c7-b09f-4325-ae16-f1f7ee1680c3
+2025-09-07 13:20:26 |     INFO | Transaction processed
+2025-09-07 13:20:26 |     INFO | Transaction processed
+2025-09-07 13:20:26 |     INFO | 🎯 Auto-monitoring started for payment
+2025-09-07 13:20:26 |     INFO | ✅ Payment created successfully: c190a1c7-b09f-4325-ae16-f1f7ee1680c3 (1452ms)
+2025-09-07 13:20:26 |     INFO | User session activity
+2025-09-07 13:20:26 |     INFO | ::1 - - [07/Sep/2025:06:20:26 +0000] "POST /api/payments/create HTTP/1.1" 200 684 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:26 |     INFO | ::1 - - [07/Sep/2025:06:20:26 +0000] "GET /temp/qr_BILL1757226025204.png HTTP/1.1" 200 3295 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:20:34 |     INFO | 🔍 Checking payment status: 4da5159feaf8aa2eb85a3a260c91f752
+2025-09-07 13:20:35 |     INFO | Transaction processed
+2025-09-07 13:20:35 |     INFO | 📊 Payment status checked: 4da5159feaf8aa2eb85a3a260c91f752 - UNPAID
+2025-09-07 13:20:45 |     INFO | 🔍 Checking payment status: 4da5159feaf8aa2eb85a3a260c91f752
+2025-09-07 13:20:45 |     INFO | Transaction processed
+2025-09-07 13:20:45 |     INFO | 📊 Payment status checked: 4da5159feaf8aa2eb85a3a260c91f752 - UNPAID
+2025-09-07 13:20:55 |     INFO | 🔍 Checking payment status: 4da5159feaf8aa2eb85a3a260c91f752
+2025-09-07 13:20:56 |     INFO | 🎉 PAYMENT SUCCESSFULLY COMPLETED
+2025-09-07 13:20:56 |     INFO | Transaction processed
+2025-09-07 13:20:56 |     INFO | 📊 Payment status checked: 4da5159feaf8aa2eb85a3a260c91f752 - PAID
+2025-09-07 13:20:56 |     INFO | 🎊 Auto-monitor detected payment success
+2025-09-07 13:22:01 |     INFO | 🌐 API Request: POST /payments/create
+2025-09-07 13:22:01 |     INFO | User session activity
+2025-09-07 13:22:01 |     INFO | 🚀 Creating payment transaction: 6118c0e5-5119-477c-8a7e-18acdf864916
+2025-09-07 13:22:01 |     INFO | Transaction processed
+2025-09-07 13:22:01 |     INFO | Transaction processed
+2025-09-07 13:22:01 |     INFO | 🎯 Auto-monitoring started for payment
+2025-09-07 13:22:01 |     INFO | ✅ Payment created successfully: 6118c0e5-5119-477c-8a7e-18acdf864916 (599ms)
+2025-09-07 13:22:01 |     INFO | User session activity
+2025-09-07 13:22:01 |     INFO | ::1 - - [07/Sep/2025:06:22:01 +0000] "POST /api/payments/create HTTP/1.1" 200 644 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:22:01 |     INFO | ::1 - - [07/Sep/2025:06:22:01 +0000] "GET /temp/qr_BILL1757226121365.png HTTP/1.1" 200 3229 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-07 13:22:06 |     INFO | 🔍 Checking payment status: d437f72c19076946a37b9c171e466bcc
+2025-09-07 13:22:06 |     INFO | Transaction processed
+2025-09-07 13:22:06 |     INFO | 📊 Payment status checked: d437f72c19076946a37b9c171e466bcc - UNPAID
+2025-09-07 13:22:16 |     INFO | 🔍 Checking payment status: d437f72c19076946a37b9c171e466bcc
+2025-09-07 13:22:17 |     INFO | Transaction processed
+2025-09-07 13:22:17 |     INFO | 📊 Payment status checked: d437f72c19076946a37b9c171e466bcc - UNPAID
+2025-09-07 13:22:27 |     INFO | 🔍 Checking payment status: d437f72c19076946a37b9c171e466bcc
+2025-09-07 13:22:27 |     INFO | Transaction processed
+2025-09-07 13:22:27 |     INFO | 📊 Payment status checked: d437f72c19076946a37b9c171e466bcc - UNPAID
+2025-09-07 13:22:31 |     INFO | 🛑 SIGINT received, shutting down gracefully

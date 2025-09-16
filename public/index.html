@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏦 Bakong KHQR Payment Tester</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+
+        .result-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 5px solid #3498db;
+        }
+
+        .result-card.success {
+            border-left-color: #27ae60;
+            background: #d5f4e6;
+        }
+
+        .result-card.error {
+            border-left-color: #e74c3c;
+            background: #fdeaea;
+        }
+
+        .result-card.warning {
+            border-left-color: #f39c12;
+            background: #fef9e7;
+        }
+
+        .qr-display {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .qr-code {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .qr-text {
+            font-family: monospace;
+            font-size: 12px;
+            word-break: break-all;
+            background: #f1f2f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-paid {
+            background: #d1edff;
+            color: #0c5460;
+        }
+
+        .status-unpaid {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .transaction-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ecf0f1;
+            transition: all 0.3s;
+        }
+
+        .transaction-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .log-container {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+
+        .log-entry.error {
+            color: #e74c3c;
+        }
+
+        .log-entry.success {
+            color: #27ae60;
+        }
+
+        .log-entry.warning {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏦 Bakong KHQR Payment Tester</h1>
+            <p>Interactive payment testing interface with complete logging</p>
+        </div>
+
+        <div class="content">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('create')">Create QR</button>
+            <button class="tab-btn" onclick="showTab('check')">Check Status</button>
+            <button class="tab-btn" onclick="showTab('monitor')">Auto Monitor</button>
+            <button class="tab-btn" onclick="showTab('history')">Transaction History</button>
+            <button class="tab-btn" onclick="showTab('bulk')">Bulk Check</button>
+        </div>            <!-- Create Payment Tab -->
+            <div id="create-tab" class="tab-content active">
+                <h3>💰 Create New Payment QR Code</h3>
+                <form id="payment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="amount">Amount *</label>
+                            <input type="number" id="amount" step="0.01" min="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="currency">Currency *</label>
+                            <select id="currency" required>
+                                <option value="USD">USD</option>
+                                <option value="KHR">KHR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="description">Description *</label>
+                            <input type="text" id="description" placeholder="e.g., Coffee Purchase" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="store-label">Store Label *</label>
+                            <input type="text" id="store-label" placeholder="e.g., Coffee Shop" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bill-number">Bill Number</label>
+                            <input type="text" id="bill-number" placeholder="Auto-generated if empty">
+                        </div>
+                        <div class="form-group">
+                            <label for="qr-type">QR Type</label>
+                            <select id="qr-type">
+                                <option value="false">Dynamic (Fixed Amount)</option>
+                                <option value="true">Static (Customer can change amount)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">🚀 Generate QR Code</button>
+                    <button type="button" class="btn" onclick="debugTest()" style="background-color: #e74c3c; margin-left: 10px;">🔧 Debug Test</button>
+                </form>
+
+                <div class="loading" id="create-loading">
+                    <div class="spinner"></div>
+                    <p>Generating QR code...</p>
+                </div>
+
+                <div id="qr-result"></div>
+            </div>
+
+            <!-- Check Status Tab -->
+            <div id="check-tab" class="tab-content">
+                <h3>🔍 Check Payment Status</h3>
+                <form id="check-form">
+                    <div class="form-group">
+                        <label for="check-identifier">Transaction ID or MD5 Hash *</label>
+                        <input type="text" id="check-identifier" placeholder="Enter transaction ID or MD5 hash" required>
+                    </div>
+                    <button type="submit" class="btn">🔍 Check Status</button>
+                </form>
+
+                <div class="loading" id="check-loading">
+                    <div class="spinner"></div>
+                    <p>Checking payment status...</p>
+                </div>
+
+                <div id="check-result"></div>
+            </div>
+
+            <!-- Monitor Payment Tab -->
+            <div id="monitor-tab" class="tab-content">
+                <h3>👁️ Monitor Payment (Real-time)</h3>
+                <form id="monitor-form">
+                    <div class="form-group">
+                        <label for="monitor-identifier">Transaction ID or MD5 Hash *</label>
+                        <input type="text" id="monitor-identifier" placeholder="Enter transaction ID or MD5 hash" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="monitor-timeout">Timeout (seconds)</label>
+                            <input type="number" id="monitor-timeout" value="300" min="30" max="600">
+                        </div>
+                        <div class="form-group">
+                            <label for="monitor-interval">Check Interval (seconds)</label>
+                            <input type="number" id="monitor-interval" value="5" min="2" max="30">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning">👁️ Start Monitoring</button>
+                    <button type="button" id="stop-monitor" class="btn btn-danger" style="display: none;">⏹️ Stop Monitoring</button>
+                </form>
+
+                <div class="loading" id="monitor-loading">
+                    <div class="spinner"></div>
+                    <p>Monitoring payment... <span id="monitor-time">0</span>s</p>
+                </div>
+
+                <div id="monitor-result"></div>
+            </div>
+
+            <!-- Auto Monitor Tab -->
+        <div id="monitor-tab" class="tab-content">
+            <div class="form-container">
+                <h3>🎯 Auto Payment Monitor</h3>
+                <p>Monitor the automatic payment tracking system that watches for QR code payments in real-time.</p>
+                
+                <div style="margin: 20px 0;">
+                    <button onclick="checkMonitorStatus()" class="btn btn-primary">Refresh Monitor Status</button>
+                </div>
+                
+                <div id="monitor-result"></div>
+            </div>
+        </div>
+
+        <!-- Transaction History Tab -->
+            <div id="history-tab" class="tab-content">
+                <h3>📊 Transaction History</h3>
+                <div style="margin-bottom: 20px;">
+                    <button class="btn" onclick="loadTransactions()">🔄 Refresh Transactions</button>
+                </div>
+
+                <div class="loading" id="history-loading">
+                    <div class="spinner"></div>
+                    <p>Loading transaction history...</p>
+                </div>
+
+                <div id="history-result"></div>
+            </div>
+
+            <!-- Activity Log -->
+            <div id="activity-log">
+                <h3>📝 Activity Log</h3>
+                <div class="log-container" id="log-container">
+                    <div class="log-entry">🚀 Bakong KHQR Payment Tester initialized</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/public/app.js"></script>
+</body>
+</html>

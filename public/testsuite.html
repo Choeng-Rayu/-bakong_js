@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Generator Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { border: 1px solid #ccc; padding: 20px; margin: 20px 0; }
+        .success { color: green; }
+        .error { color: red; }
+        img { border: 2px solid #333; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Bakong KHQR Test Suite</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: API Connection</h2>
+        <button onclick="testAPI()">Test API</button>
+        <div id="api-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: QR Generation</h2>
+        <button onclick="testQRGeneration()">Generate Test QR</button>
+        <div id="qr-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Image Display</h2>
+        <button onclick="testImageDisplay()">Test Image Display</button>
+        <div id="image-result"></div>
+    </div>
+
+    <script>
+    async function testAPI() {
+        const resultDiv = document.getElementById('api-result');
+        try {
+            const response = await fetch('/api/health');
+            const data = await response.json();
+            resultDiv.innerHTML = `<span class="success">✅ API Connection: OK</span><pre>${JSON.stringify(data, null, 2)}</pre>`;
+        } catch (error) {
+            resultDiv.innerHTML = `<span class="error">❌ API Connection: FAILED - ${error.message}</span>`;
+        }
+    }
+
+    async function testQRGeneration() {
+        const resultDiv = document.getElementById('qr-result');
+        const testData = {
+            amount: 10.00,
+            currency: 'USD',
+            description: 'Test Suite Payment',
+            storeLabel: 'Test Suite Store',
+            billNumber: 'TESTSUITE_' + Date.now()
+        };
+
+        try {
+            resultDiv.innerHTML = '<span style="color: orange;">⏳ Generating QR...</span>';
+            const response = await fetch('/api/payments/create', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(testData)
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                const imagePath = data.data.imagePath.split('/').pop();
+                resultDiv.innerHTML = `
+                    <span class="success">✅ QR Generation: SUCCESS</span>
+                    <p><strong>Bill Number:</strong> ${data.data.billNumber}</p>
+                    <p><strong>Amount:</strong> ${data.data.amount} ${data.data.currency}</p>
+                    <p><strong>QR Code:</strong> ${data.data.qrCode.substring(0, 50)}...</p>
+                    <p><strong>Image Path:</strong> /temp/${imagePath}</p>
+                    <img src="/temp/${imagePath}" alt="Generated QR Code" width="200" height="200">
+                `;
+            } else {
+                resultDiv.innerHTML = `<span class="error">❌ QR Generation: FAILED - ${data.error}</span>`;
+            }
+        } catch (error) {
+            resultDiv.innerHTML = `<span class="error">❌ QR Generation: ERROR - ${error.message}</span>`;
+        }
+    }
+
+    async function testImageDisplay() {
+        const resultDiv = document.getElementById('image-result');
+        try {
+            const response = await fetch('/temp/');
+            if (response.ok) {
+                resultDiv.innerHTML = `<span class="success">✅ Image serving: OK</span><p>Test image: <img src="/temp/qr_FINAL001.png" width="150" height="150" alt="Test QR"></p>`;
+            } else {
+                resultDiv.innerHTML = `<span class="error">❌ Image serving: Directory not accessible</span>`;
+            }
+        } catch (error) {
+            resultDiv.innerHTML = `<span class="error">❌ Image serving: ERROR - ${error.message}</span>`;
+        }
+    }
+
+    // Auto-run tests
+    window.onload = function() {
+        testAPI();
+        setTimeout(testQRGeneration, 1000);
+        setTimeout(testImageDisplay, 2000);
+    };
+    </script>
+</body>
+</html>
